@@ -43,7 +43,8 @@ div{
 	grid-area:logo;
 }
 .menu{
-	background-color:#0CB7F2;
+	background-image:linear-gradient(to bottom,#b9ffff,#002973);
+	
 	
 }
 
