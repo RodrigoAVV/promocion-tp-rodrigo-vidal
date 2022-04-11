@@ -17,12 +17,13 @@ html {
 		"galeria galeria galeria"
 		"footer footer footer";
 		/*Vertical*/
-		grid-template-columns:45% 45% auto;
+		grid-template-columns:48% 46% auto;
 		/*75% para que el contenodor tome al menu y la galeria*/
 		grid-template-rows:12% auto 25%;
 		grid-column-gap:1px;
 	    grid-row-gap:1px;
 		align-items:stretch;
+		
 }
 
 main{
@@ -96,7 +97,28 @@ Inicio estilo logo
 	height:100%;
 	width:100%;
 }
-
+/*
+@keyframes efecto{
+	0%{width:100px;}
+	0.2s{width:50px;}
+	25%{width:300px;}
+	50%{width:200px;
+	background-color:red;}
+	75%{width:300px;}
+	100%{width:100px;
+	background-color:green;}
+}
+.contenedor .logo{
+	width:100px;
+	height:100px;
+	background-color:green;
+	animation-name:efecto;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease;
+	animation-duration:2s;
+	animation-delay:10s;
+}
+*/
 /*
 #####################################################################################
 Fin estilo para logo
@@ -200,12 +222,10 @@ Inicio estilo Ubicación
 	border-color:red;
 	*/
 }
-.ubicacion .ubicacion__section article {
-	border:10px green;
-}
-.liceo,.mapa{
-	height:30rem;
-	width:60rem;
+
+.ubicacion .ubicacion__section .liceo,.ubicacion .ubicacion__section .mapa{
+	height:40rem;
+	width:70rem;
 }
 
 /*
@@ -257,8 +277,6 @@ Inicio estilo para footer
 #####################################################################################
 */
 .footer{
-	height:94%;
-	width:100%;
 	display:flex;
 	flex-direction:row;
 	justify-content:space-evenly;
@@ -269,22 +287,18 @@ Inicio estilo para footer
 }
 .footer .footer__section{
 	/*Para el alto del section, separa cada foto de manera vertical*/
-	height:65%;
-	width:20%;
-	padding:0.5rem;
-	border:1px solid;
-	margin:1rem;
+	height:80%;
+	width:23%;
+	margin:0.5rem;
 }
 
 .footer .footer__section article{
-	height:100%;
-	width:100%;
-	padding:5px 5px;
+	padding:0.5rem;
 }
 .footer .footer__section article img{
 	height:4.5rem;
 	width:4.5rem;
-	padding-top:0.6rem;
+	padding-top:0.7rem;
 }
 /*
 #####################################################################################
