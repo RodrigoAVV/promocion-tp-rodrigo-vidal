@@ -97,28 +97,7 @@ Inicio estilo logo
 	height:100%;
 	width:100%;
 }
-/*
-@keyframes efecto{
-	0%{width:100px;}
-	0.2s{width:50px;}
-	25%{width:300px;}
-	50%{width:200px;
-	background-color:red;}
-	75%{width:300px;}
-	100%{width:100px;
-	background-color:green;}
-}
-.contenedor .logo{
-	width:100px;
-	height:100px;
-	background-color:green;
-	animation-name:efecto;
-	animation-iteration-count:infinite;
-	animation-timing-function:ease;
-	animation-duration:2s;
-	animation-delay:10s;
-}
-*/
+
 /*
 #####################################################################################
 Fin estilo para logo
@@ -262,7 +241,7 @@ Inicio estilo Contacto
 }
 .form .form__section fieldset form label,input,textarea,select{
 	height:3rem;
-	width
+	width:100%;
 }
 /*
 #####################################################################################
@@ -295,11 +274,39 @@ Inicio estilo para footer
 .footer .footer__section article{
 	padding:0.5rem;
 }
-.footer .footer__section article img{
+.footer .footer__section .footer__section__redes img{
 	height:4.5rem;
 	width:4.5rem;
 	padding-top:0.7rem;
+	animation-name:efecto;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease;
+	animation-duration:5s;
+	animation-delay:3s;
 }
+.footer .footer__section .footer__section__redes {
+	border:1px solid;
+}
+
+@keyframes efecto{
+	0%{width:4.5rem;}
+	25%{width:4rem;}
+	50%{width:3.5rem;}
+	75%{width:4rem;}
+	100%{width:4.5rem;}
+}
+/*
+.footer .footer__section .footer__section__redes{
+	width:100px;
+	height:100px;
+	background-color:green;
+	animation-name:efecto;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease;
+	animation-duration:2s;
+	animation-delay:5s;
+}
+
 /*
 #####################################################################################
 Fin estilo footer
@@ -368,14 +375,14 @@ Inicio estilo index 468px
 			"galeria"
 			"footer";
 		grid-template-columns:100%;
-		grid-template-rows:7% 5% 70% auto;
+		grid-template-rows:10% 12rem 70% auto;
 		grid-column-gap:1px;
 	    grid-row-gap:1px;
 		align-items:stretch;
     }
 	.galeria .galeria__item{
 		/*Para el alto del section, separa cada foto de manera vertical*/
-		height:16%;
+		height:16.5%;
 		width:90%;
 		border:2px solid;
 	}
@@ -386,7 +393,7 @@ Inicio estilo index 468px
 		padding:0.1rem;
 	}
 	.menu li {
-		margin-top:2rem;
+		margin-top:2.3rem;
 	}
 	/*
 	.modulos .galeria__modulos{
